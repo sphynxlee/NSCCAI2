@@ -8,7 +8,7 @@ points = {"red": [[2,4],[1,3],[2,3],[3,2],[2,1]],
 
 
 
-new_point = [4,3]
+new_point = [3,4]
 
 
 def euclidean_distance(v1,v2):
@@ -59,7 +59,7 @@ for point in points['blue']:
 for point in points['red']:
     ax.scatter(point[0],point[1],color="#FF0000",s=68)
 
-ax.scatter(new_point[0],new_point[1],marker="*",s=200,zorder=100)
+ax.scatter(new_point[0],new_point[1], color=new_category, marker="*",s=200,zorder=100)
 
 plt.show()
 
