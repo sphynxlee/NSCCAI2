@@ -11,10 +11,10 @@ points = {"red": [[2,4],[1,3],[2,3],[3,2],[2,1]],
 new_point = [4,3]
 
 
-def euclidean_distance(x,y):
-    x = np.array(x)
-    y = np.array(y)
-    distance = np.sqrt(np.sum((x-y)**2))
+def euclidean_distance(v1,v2):
+    v1 = np.array(v1)
+    v2 = np.array(v2)
+    distance = np.sqrt(np.sum((v1-v2)**2))
     return(distance)
 
 
