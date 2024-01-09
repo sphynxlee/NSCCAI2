@@ -1,15 +1,13 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from collections import Counter
+from matplotlib.markers import MarkerStyle
 
 #https://www.geogebra.org/
 points = {"red": [[2,4],[1,3],[2,3],[3,2],[2,1]],
           "blue": [[5,6],[4,5],[4,6],[6,6],[5,4]]}
 
-
-
 new_point = [3,4]
-
 
 def euclidean_distance(v1,v2):
     v1 = np.array(v1)
@@ -27,6 +25,10 @@ class KNN:
         self.points = points
 
     def predict(self, new_point):
+        if self.points is None:
+            print("Error: Model not fitted.")
+            return None
+
         distances = []
 
         for category in self.points:
@@ -40,7 +42,6 @@ class KNN:
         # result = Counter(categories).most_common(1)
         print("Result",result)
         return(result)
-
 
 myKNN = KNN()
 myKNN.fit(points)
@@ -59,12 +60,6 @@ for point in points['blue']:
 for point in points['red']:
     ax.scatter(point[0],point[1],color="#FF0000",s=68)
 
-ax.scatter(new_point[0],new_point[1], color=new_category, marker="*",s=200,zorder=100)
+ax.scatter(new_point[0],new_point[1], color=new_category, marker=MarkerStyle("*"),s=200,zorder=100)
 
 plt.show()
-
-
-
-
-
-
