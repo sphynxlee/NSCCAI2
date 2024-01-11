@@ -10,6 +10,7 @@ def binary_search (list, target):
             right = midpoint - 1
         else:
             left = midpoint + 1
+    return -1
 
 my_list = [2, 3, 4, 5, 6, 7, 9, 11, 13]
 target_value = 7
