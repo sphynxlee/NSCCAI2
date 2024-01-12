@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Demo</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            background-color: lightgray;
+        }
+        /* tr:nth-child(odd) {
+            background-color: white;
+        }
+        tr:nth-child(even) {
+            background-color: lightgray;
+        } */
+        td, th {
+            border: 1px solid black;
+            padding: 0.5em;
+        }
+
+        #yellow_table {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tables</h1>
+    <table>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+        </tr>
+        <tr>
+            <td colspan="2">Row 1, Column 1</td>
+        </tr>
+        <tr>
+            <td>Row 2, Column 1</td>
+            <td>Row 2, Column 2</td>
+        </tr>
+    </table>
+
+    <table id="yellow_table">
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+        </tr>
+        <tr>
+            <td colspan="2">Row 1, Column 1</td>
+        </tr>
+        <tr>
+            <td>Row 2, Column 1</td>
+            <td>Row 2, Column 2</td>
+        </tr>
+    </table>
+</body>
+</html>
