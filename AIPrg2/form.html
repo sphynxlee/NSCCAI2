@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            console.log('Page loaded');
+            let textField = document.querySelector('#textField');
+            console.log(textField);
+        };
+
+        (function(){
+            console.log('Page loading');
+        })();
+        // textField.addEventListener('input', function(event) {
+        //     console.log(event.target.value);
+        // });
+    </script>
+    <form action="" method="post">
+        <input id="textField" id="textField" placeholder="Enter your name" name="user"><br>
+        <input type="password" placeholder="Choose a passphrase" name="pwd"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
