@@ -134,8 +134,6 @@
         (() => {
             console.log('create numbers');
 
-            // let newloop = false;
-
             let screen = document.querySelector('.screen');
 
             let reset = document.querySelector('#reset');
@@ -145,11 +143,14 @@
             });
 
             let equals = document.querySelector('#equals');
-            equals.addEventListener('click', function(event) {
-                console.log(event.target.innerHTML);
-                screen.innerHTML = eval(screen.innerHTML);
-                newloop = true;
-            });
+                equals.addEventListener('click', function(event) {
+                    console.log(event.target.innerHTML);
+                    try {
+                        screen.innerHTML = eval(screen.innerHTML);
+                    } catch (error) {
+                        screen.innerHTML = 'Error';
+                    }
+                });
 
             let numberDiv = document.querySelector('#numbers');
             for (let i = 0; i < 10; i++) {
@@ -157,10 +158,6 @@
                 number.classList.add('number');
                 number.innerHTML = i;
                 number.addEventListener('click', function(event) {
-                    // if (newloop) {
-                    //     screen.innerHTML = '';
-                    //     newloop = false;
-                    // }
                     console.log(event.target.innerHTML);
                     screen.innerHTML += event.target.innerHTML;
                 });
