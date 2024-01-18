@@ -28,3 +28,18 @@ def two_sum2(nums, target):
 lists = [2, 7, 11, 15]
 target = 18
 print(two_sum2(lists, target))
+
+
+def two_sum3(array, target):
+    for i in range(0, len(array)-1):
+        for j in range(0, len(array)-1):
+            if i == j:
+                continue
+            elif array[i] + array[j] == target:
+                return i, j
+    return -1
+
+# test:
+arr = [2, 7, 11, 15]
+target = 13
+print("Indices:", two_sum3(arr, target))
