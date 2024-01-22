@@ -69,7 +69,20 @@ arrData = JSON.parse(data);
 
 
     const output = document.getElementById('results');
+    let strHTML = "";
     // output.innerText = data;
     for (let i = 0; i < arrData.length; i++) {
-        output.innerHTML = output.innerHTML + "<h2>" + arrData[i].name + "</h2>";
+        strHTML = strHTML +  `<h2>${arrData[i].id}</h2>`;
+        strHTML = strHTML +  `<h2>${arrData[i].name}</h2>`;
+        strHTML = strHTML + `<ul>`;
+        for (let j = 0; j < arrData[i].topping.length; j++) {
+            console.log(arrData[i].topping[j].type);
+            strHTML = strHTML + `<li>${arrData[i].topping[j].type}</li>`;
+        }
+        strHTML = strHTML + `</ul>`;
     }
+    output.innerHTML = strHTML;
+
+    const data2 = fetch('https://jsonplaceholder.typicode.com/users')
+    .then(response => response.json())
+    .then(data => console.log(data));
