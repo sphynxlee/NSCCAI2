@@ -1,3 +1,4 @@
+// data comes from https://opensource.adobe.com/Spry/samples/data_region/JSONDataSetSample.html
 const data = `[{
     "id": "0001",
     "type": "donut",
