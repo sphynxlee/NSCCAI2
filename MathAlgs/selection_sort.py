@@ -11,7 +11,11 @@ def selection_sort(list):
 
 print(selection_sort(list))
 
-# Through the whole process of the selection sort, I figured out that the key principle is we should iterate the whole list on its length, and in every iteration, we try to find out the minimum value's index and then let the minimum to the left of the list, and then we do the comparison of the rest of the list.
+# Through the whole process of the selection sort,
+# I figured out that the key principle is we should iterate the whole list on its length,
+# and in every iteration, we try to find out the minimum value's index
+# and then let the minimum to the left of the list, and then we do the comparison of the rest of the list.
+# So, the time complexity of the selection sort is O(n^2).
 # [-1, 1, 4, 2, 3, 7]
 # [-1, 1, 2, 4, 3, 7]
 # [-1, 1, 2, 3, 4, 7]
