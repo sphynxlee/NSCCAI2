@@ -9,3 +9,6 @@ def quick_sort(arr):
 
 arr = [10, 5, 2, 3]
 print(quick_sort(arr))
+
+# time complexity: O(n log n)
+# space complexity: O(n)

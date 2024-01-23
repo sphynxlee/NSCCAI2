@@ -16,3 +16,6 @@ my_list = [2, 3, 4, 5, 6, 7, 9, 11, 13]
 target_value = 7
 result = binary_search(my_list, target_value)
 print(result)
+
+# time complexity: O(log n)
+# space complexity: O(1)

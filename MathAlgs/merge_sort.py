@@ -30,3 +30,6 @@ arr = [38, 27, 43, 10]
 sorted_arr = merge_sort(arr)
 print("Original array:", arr)
 print("Sorted array:", sorted_arr)
+
+# time complexity: O(n log n)
+# space complexity: O(n)

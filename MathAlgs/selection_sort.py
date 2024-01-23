@@ -19,3 +19,6 @@ print(selection_sort(list))
 # [-1, 1, 4, 2, 3, 7]
 # [-1, 1, 2, 4, 3, 7]
 # [-1, 1, 2, 3, 4, 7]
+
+# time complexity: O(n^2)
+# space complexity: O(1)
