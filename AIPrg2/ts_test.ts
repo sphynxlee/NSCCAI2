@@ -14,8 +14,14 @@ class Person {
     sayGoodbye(): void {
         console.log(`Goodbye from ${this.name}.`);
     }
+
+    // work is a generic function that can take any object that has a name and age property
+    work<Type extends { toString(): string }>(obj: Type): void {
+        console.log(`${obj.toString()} is working.`);
+    }
 }
 
 let p1 = new Person("Bob", 22);
 p1.sayHello();
 p1.sayGoodbye();
+p1.work(p1);
