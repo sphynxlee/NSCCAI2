@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        form, #product_content {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #product_content {
+            margin-top: 20px;
+            display: none;
+        }
+        .product_key {
+            font-weight: bold;
+            font-size: 1.2em;
+            /* margin-bottom: 10px; */
+        }
+        .product_value {
+            /* margin-bottom: 20px; */
+            border-bottom: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="query_label">Label:</div>
+        <div type="text" name="label" id="label">
+            query by product id to fetch product data
+        </div>
+        <select name="type" id="product_id">
+            <option value="1">product 1</option>
+            <option value="2">product 2</option>
+            <option value="3">product 3</option>
+            <option value="4">product 4</option>
+            <option value="5">product 5</option>
+            <option value="6">product 6</option>
+        </select><br>
+
+        <input name="shirt_size" type="radio">
+        <input name="shirt_size" type="radio" checked>
+        <input name="shirt_size" type="radio">
+        <br>
+        <!-- guess check box -->
+        <input name="shirt_size" type="checkbox">
+        <input name="shirt_size" type="checkbox" checked>
+        <br>
+        <!-- <button type="submit">Submit</button> -->
+    </form>
+    <div id="product_content"></div>
+<script>
+    // https://dummyjson.com/products/1
+    (() => {
+        window.onload = () => {
+            const form = document.querySelector('form');
+            const selectBox = document.querySelector('#product_id');
+
+            selectBox.addEventListener('change', (event) => {
+                console.log(event.target.value);
+                event.preventDefault();
+
+                let productContent = document.querySelector('#product_content');
+                productContent.style.display = 'block';
+                // add loading hint
+                productContent.innerHTML = 'Loading...';
+
+                const productId = document.querySelector('#product_id');
+                let url = `https://dummyjson.com/products/${productId.value}`;
+                fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+
+                    let html = '';
+                    for (let key in data) {
+                        html += `<div class="product_key">${key}</div>`;
+                        if (key === 'thumbnail') {
+                            html += `<div class="product_value"><img src="${data[key]}"></div>`;
+                        } else if (key === 'images') {
+                            html += `<div class="product_value">`;
+                            for (let image of data[key]) {
+                                html += `<img src="${image}">`;
+                            }
+                            html += `</div>`;
+                        } else {
+                            html += `<div class="product_value">${data[key]}</div>`;
+                        }
+
+                    }
+                    productContent.innerHTML = html;
+                });
+            });
+        };
+    })();
+
+</script>
+</body>
+</html>
