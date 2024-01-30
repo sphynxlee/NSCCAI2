@@ -4,28 +4,38 @@
 # "Vic 20" => ('Vic 20', None)
 # the linked list is a series of nodes, my_fav_computers = atari_node => cbm_node => None
 
+from typing import Optional
 
 class Node:
     def __init__(self, data=None):
         self.data = data
-        self.next = None
+        self.next: Optional['Node'] = None
 
-class linked_list:
+class LinkedList:
     def __init__(self):
-        self.head = None
+        self.head: Optional[Node] = None
 
     def add_node(self, data):
-        if (self.head == None):
+        if self.head is None:
             self.head = Node(data)
         else:
             new_node = Node(data)
-            new_node.next = None  # Fix: Assign None to new_node.next
-            self.head = new_node
+            current_node = self.head
+            while current_node.next is not None:
+                current_node = current_node.next
+            current_node.next = new_node
 
-atari_node = Node('Atari 400')
-cbm_node = Node('Vic 20')
+    def __str__(self):
+        result = []
+        current_node = self.head
+        while current_node:
+            result.append(current_node.data)
+            current_node = current_node.next
+        return " => ".join(result)
 
-my_fav_computers = linked_list()
+my_fav_computers = LinkedList()
 
-my_fav_computers.add_node(atari_node)
+my_fav_computers.add_node('Atari 400')
+my_fav_computers.add_node('Vic 20')
+
 print(my_fav_computers)
