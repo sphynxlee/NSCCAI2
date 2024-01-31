@@ -30,7 +30,8 @@
     function getAllCountryData () {
         fetch("https://restcountries.com/v3.1/all")
         .then(res => res.json())
-        .then(data => renderData(data));
+        .then(data => renderData(data))
+        .catch(err => console.error("Error: ", err));
     }
 
 
