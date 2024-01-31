@@ -6,11 +6,11 @@ app = Flask(__name__)
 
 # Restful API: GET, POST, PUT, DELETE
 @app.route('/test_get', methods=['GET'])
-def api():
+def test_get():
     return jsonify({'message': 'Hello, World!'})
 
 @app.route('/test_post', methods=['POST'])
-def api_post():
+def test_post():
     data = request.get_json()
     print(data)
     return jsonify({'message': 'Hello, ' + data['name']})
