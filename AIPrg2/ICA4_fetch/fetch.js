@@ -27,11 +27,21 @@
         }
     }
 
-    function getAllCountryData () {
-        fetch("https://restcountries.com/v3.1/all")
-        .then(res => res.json())
-        .then(data => renderData(data))
-        .catch(err => console.error("Error: ", err));
+    // function getAllCountryData () {
+    //     fetch("https://restcountries.com/v3.1/all")
+    //     .then(res => res.json())
+    //     .then(data => renderData(data))
+    //     .catch(err => console.error("Error: ", err));
+    // }
+
+    async function getAllCountryData () {
+        try {
+            const res = await fetch("https://restcountries.com/v3.1/all");
+            const data = await res.json();
+            renderData(data);
+        } catch (err) {
+            console.error("Error: ", err);
+        }
     }
 
 
