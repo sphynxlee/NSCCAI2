@@ -1,0 +1,20 @@
+.card {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+.card p {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 10px;
+}

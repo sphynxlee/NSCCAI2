@@ -9,6 +9,10 @@
     <h1>Welcome to My HTML5 Page</h1>
     <script>
         // fetch to your Flask server
+        fetch('http://127.0.0.1:5000/test_get')
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.log(error));
     </script>
 </body>
 </html>
