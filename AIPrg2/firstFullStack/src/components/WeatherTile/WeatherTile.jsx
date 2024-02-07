@@ -6,11 +6,11 @@
 
 import './WeatherTile.css'
 
-function WeatherTile(city) {
+function WeatherTile() {
 
   return (
     <>
-      <h1>WeatherTile ${city}</h1>
+      <h1>WeatherTile</h1>
       <img src="" />
       <h3>Halifax</h3>
     </>

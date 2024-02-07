@@ -17,8 +17,8 @@ function App() {
         <a href="https://react.dev" target="_blank" rel="noreferrer">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
-      </div>
-      <h1>Vite + React</h1> */}
+      </div> */}
+      <h1>Vite + React</h1>
       <WeatherTile city="Halifax" />
       <StockTicker />
       {/* <div className="card">
