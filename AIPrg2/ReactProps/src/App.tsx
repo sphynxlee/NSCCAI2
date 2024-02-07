@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <p>test</p>
-      <TheSwitch prompt="Buy Now!" btnColor="red" />
+      <TheSwitch prompt="Increment" btnColor="red" />
     </>
   )
 }
