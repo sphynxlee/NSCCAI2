@@ -11,8 +11,8 @@ export default function TheSwitch(props: TheSwitchProps): JSX.Element {
     const [count, setCount] = useState(0);
 
     function IncrementCount () {
-        console.log('clicked');
         setCount(count+1);
+        console.log('clicked count: ' + count + ' times');
     }
 
     return (
