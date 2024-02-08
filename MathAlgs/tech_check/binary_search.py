@@ -3,10 +3,10 @@ def binary_search (list, target):
     right = len(list) - 1
     while left <= right:
         midpoint = (left + right) // 2
-        current_item = list[midpoint]
-        if current_item == target:
+        current_element = list[midpoint]
+        if current_element == target:
             return midpoint
-        elif target < current_item:
+        elif target < current_element:
             right = midpoint - 1
         else:
             left = midpoint + 1
