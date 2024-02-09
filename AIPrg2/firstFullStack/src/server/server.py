@@ -1,9 +1,10 @@
 from flask import Flask, request, jsonify
 import json
+from flask_cors import CORS
 
 
 app = Flask(__name__)
-
+CORS(app)
 # Restful API: GET, POST, PUT, DELETE
 @app.route('/test_get', methods=['GET'])
 def test_get():
