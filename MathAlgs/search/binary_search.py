@@ -1,3 +1,9 @@
+# binary search algorithm:
+# 1. start with the middle item: if it's the target, you're done
+# 2. if the target is less than the middle item, search the left half
+# 3. if the target is greater than the middle item, search the right half
+# 4. repeat until you find the target or the search space is empty
+
 def binary_search (list, target):
     left = 0
     right = len(list) - 1
