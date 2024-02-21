@@ -1,5 +1,5 @@
-import './App.css'
-import TheSwitch from './components/TheSwitch/TheSwitch'
+import './App.css';
+import TheSwitch from './components/TheSwitch/TheSwitch';
 
 
 function App() {
