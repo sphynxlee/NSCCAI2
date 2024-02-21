@@ -8,8 +8,10 @@ export default function Weather(): JSX.Element {
 
     return (
         <>
-            <h2>Weather Component</h2>
-            <Temperature />
+            <div style={{backgroundColor: 'lightblue', padding: '10px', margin: '10px', border: '1px solid black', borderRadius: '5px'}} >
+                <h2>Halifax</h2>
+                <Temperature />
+            </div>
         </>
     );
 
