@@ -2,12 +2,15 @@
 
 // import { useState } from "react";
 import "./Temperature.css";
+import { ThemeProps } from "../interface";
 
-export default function Temperature(): JSX.Element {
+
+export default function Temperature(props: ThemeProps): JSX.Element {
 
     return (
         <>
             <h2>Temperature Component</h2>
+            <p>The theme is: {props.theme}</p>
         </>
     );
 

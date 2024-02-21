@@ -4,11 +4,12 @@ import Weather from './components/Weather/Weather'
 
 function App() {
   // const [count, setCount] = useState(0)
+  const currentTheme: string = 'dark';
 
   return (
     <>
-      <Stocks />
-      <Weather />
+      <Stocks theme={currentTheme} />
+      <Weather theme={currentTheme} />
     </>
   )
 }
