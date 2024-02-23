@@ -4,12 +4,12 @@
 import "./Stocks.css";
 import { ThemeProps } from "../interface";
 
-export default function Stocks(props: ThemeProps): JSX.Element {
+export default function Stocks(props: string): JSX.Element {
 
     return (
         <>
             <h2>Stocks Component</h2>
-            <p>The theme is: {props.theme}</p>
+            <p>The theme is: {props}</p>
         </>
     );
 
