@@ -22,7 +22,7 @@ export default function TheSwitch(props: TheSwitchProps): JSX.Element {
 
     return (
         <>
-            <button onClick={IncrementCount} className='my_btn'>{props.prompt}</button>
+            <button onClick={IncrementCount} style={{backgroundColor: props.btnColor}} className='my_btn'>{props.prompt}</button>
             <div>
                 counter: <b>{count}</b>
             </div>
