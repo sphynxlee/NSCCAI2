@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './TheSwitch.css'
 
 interface TheSwitchProps {
@@ -12,8 +12,13 @@ export default function TheSwitch(props: TheSwitchProps): JSX.Element {
 
     function IncrementCount () {
         setCount(count+1);
-        console.log('clicked count: ' + count + ' times');
+        // console.log('clicked count: ' + count + ' times');
     }
+
+    useEffect(() => {
+        console.log('String after increment:', count);
+    }, [count]);
+
 
     return (
         <>
