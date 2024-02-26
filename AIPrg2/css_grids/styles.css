@@ -1,0 +1,40 @@
+body {
+    display: grid;
+    margin: 0;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 15% 70% 15%;
+    /* height in 100% vertical view port height */
+    height: 100vh;
+}
+
+/* header, footer {
+    grid-column: 1 / 4;
+} */
+
+header {
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+nav {
+    background-color: green;
+}
+
+main {
+    background-color: yellow;
+}
+
+aside {
+    background-color: orange;
+}
+
+footer {
+    background-color: red;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
