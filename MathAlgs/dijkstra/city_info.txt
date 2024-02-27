@@ -1,0 +1,5 @@
+New York, Boston, 215
+New York, Philadelphia, 95
+Boston, Philadelphia, 290
+Boston, Washington DC, 470
+Philadelphia, Washington DC, 123
