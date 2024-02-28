@@ -5,14 +5,21 @@ import './App.css'
 import Home from './components/Home'
 import User from './components/User'
 import About from './components/About'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Link } from 'react-router-dom'
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-      <nav>[Home] | [User] | [About]</nav>
+      <nav>
+        {/* [<a href='/'>Home</a>] |
+        [<a href='user'>User</a>] |
+        [<a href='about'>About</a>] */}
+        [<Link to='/'>Home</Link>] |
+        [<Link to='user'>User</Link>] |
+        [<Link to='about'>About</Link>]
+      </nav>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/user" element={<User />} />
