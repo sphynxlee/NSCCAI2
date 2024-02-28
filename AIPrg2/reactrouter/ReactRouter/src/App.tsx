@@ -27,6 +27,7 @@ function App() {
         <Route path="/user/:id" element={<User />} /> {/* :id is a parameter, http://localhost:5173/user/123 */}
         <Route path="/users" element={<Users />} />
         <Route path="/about" element={<About />} />
+        <Route path="*" element={<h1>Not Found</h1>} />
       </Routes>
     </>
   )
