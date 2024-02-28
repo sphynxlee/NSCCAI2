@@ -4,6 +4,7 @@
 import './App.css'
 import Home from './components/Home'
 import User from './components/User'
+import Users from './components/Users'
 import About from './components/About'
 import { Routes, Route, Link } from 'react-router-dom'
 
@@ -16,13 +17,15 @@ function App() {
         {/* [<a href='/'>Home</a>] |
         [<a href='user'>User</a>] |
         [<a href='about'>About</a>] */}
+
         [<Link to='/'>Home</Link>] |
-        [<Link to='user'>User</Link>] |
+        [<Link to='users'>Users</Link>] |
         [<Link to='about'>About</Link>]
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/user" element={<User />} />
+        <Route path="/user/:id" element={<User />} /> {/* :id is a parameter, http://localhost:5173/user/123 */}
+        <Route path="/users" element={<Users />} />
         <Route path="/about" element={<About />} />
       </Routes>
     </>
