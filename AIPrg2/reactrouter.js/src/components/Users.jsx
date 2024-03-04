@@ -12,7 +12,7 @@ function Users(props)
                 return(<React.Fragment key={uid}><Link to={`/users/${uid}`}>User {uid}</Link><br/></React.Fragment>)
             })}
 
-            <Link to={`/users/${props.userName}`}>User {props.userName}</Link>
+            <Link to={`/username/${props.userName}`}>User {props.userName}</Link>
         </div>
 
         <div id="right" style={{float:"right",width:"40vw"}}>
