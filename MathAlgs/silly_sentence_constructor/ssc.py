@@ -7,7 +7,9 @@ def sentence_translator(sentence, data_path):
 
     with open(data_path, 'r') as f:
         for line in f:
-            letter, *words = line.strip().split(',')
+            row = line.strip().split(',')
+            letter = row[0]
+            words = row[1:]
             word_lists[letter.upper()] = words
 
     # Function to replace each word with a randomly chosen word from the corresponding list
