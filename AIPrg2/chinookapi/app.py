@@ -29,7 +29,7 @@ def get_customers():
     result = execute_query(query)
     return jsonify(result)
 
-@app.post("/addcustomers")
+@app.post("/addCustomers")
 def add_customer():
     person = request.get_json()
     query = '''INSERT INTO customers (FirstName, LastName, Company, Address, City, State, Country, PostalCode, Phone, Fax, Email, SupportRepId)'''
