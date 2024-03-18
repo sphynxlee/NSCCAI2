@@ -1,3 +1,7 @@
+# create a basic flask app
+# create a GET endpoint that returns all customers from the chinook database
+# create a POST endpoint that adds a new customer to the chinook database
+
 from flask import Flask, jsonify, request
 import sqlite3
 
