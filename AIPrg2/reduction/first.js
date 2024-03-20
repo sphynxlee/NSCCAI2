@@ -15,6 +15,6 @@ print = console.log;
 print(nums.reduce(reducer, initial_value));
 
 function reducer(accumulator, current_value) {
-    print(accumulator, current_value);
+    // print(accumulator, current_value);
     return accumulator + current_value;
 }
