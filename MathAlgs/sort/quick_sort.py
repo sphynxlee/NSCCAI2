@@ -1,3 +1,9 @@
+# quick sort algorithm:
+# 1. choose a pivot element from the array
+# 2. partition the array into two sub-arrays: elements less than the pivot and elements greater than the pivot
+# 3. recursively apply the quick sort algorithm to the sub-arrays
+# 4. combine the sorted sub-arrays and the pivot
+
 def quick_sort(arr):
     if len(arr) <= 1:
         return arr
