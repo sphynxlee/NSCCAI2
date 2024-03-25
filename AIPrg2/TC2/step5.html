@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function() {
+            fetch('http://127.0.0.1:5000/employees')
+                .then(response => response.json())
+                .then(data => {
+                    // document.getElementById('data').textContent = JSON.stringify(data);
+                    let employees = data;
+                    // [1, 'Adams', 'Andrew', 'General Manager', null, '1962-02-18 00:00:00', '2002-08-14 00:00:00', '11120 Jasper Ave NW', 'Edmonton', 'AB', 'Canada', 'T5K 2N1', '+1 (780) 428-9482', '+1 (780) 428-3457', 'andrew@chinookcorp.com']
+                    let table = '<table border="1"><tr><th>Employee ID</th><th>First Name</th><th>Last Name</th><th>Department</th></tr>';
+                    data.forEach(employee => {
+                        table += '<tr>';
+                        table += '<td>' + employee[0] + '</td>';
+                        table += '<td>' + employee[2] + '</td>';
+                        table += '<td>' + employee[1] + '</td>';
+                        table += '<td>' + employee[3] + '</td>';
+                        table += '</tr>';
+                    });
+                    table += '</table>';
+                    document.body.innerHTML += table;
+
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                });
+        }
+    </script>
+</head>
+<body>
+    <pre id="data"></pre>
+</body>
+</html>
