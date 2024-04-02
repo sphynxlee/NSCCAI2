@@ -13,6 +13,6 @@ def shoelace_area(vertices):
     return abs(area) / 2
 
 # Example usage:
-polygon_vertices = [(1, 1), (4, 5), (7, 2), (5, -2), (-1, -2)]
+polygon_vertices = [(2,1), (5,0), (6,4), (4,2), (1,3),(2,1)]
 area = shoelace_area(polygon_vertices)
 print("Area of the polygon:", area)
