@@ -8,10 +8,12 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.document_loaders import PyPDFLoader, DirectoryLoader
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS
+from pathlib import Path
 
+p = Path(__file__).parent
 
-DATA_PATH = "data/"
-FAISS_PATH = "vectorstore/"
+DATA_PATH = p / "data"
+FAISS_PATH = p / "vectorstore"
 
 
 def load_vector_db():
