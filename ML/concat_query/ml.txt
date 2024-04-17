@@ -1,7 +1,3 @@
-
- Saved
-
-Listen
 What type of learning algorithm is KNN (K Nearest Neighbours)?
 
 Question 1 options:
@@ -18,9 +14,7 @@ semi-supervised
 reinforcement learning
 
 Question 2 (1 point)
- Saved
 
-Listen
 How does the KNN algorithm classify a new data point?
 
 Question 2 options:
@@ -37,9 +31,7 @@ By performing gradient descent on its k nearest neighbors
 By randomly selecting the class label from its k nearest neighbors
 
 Question 3 (1 point)
- Saved
 
-Listen
 In the KNN algorithm, what does "k" represent?
 
 Question 3 options:
@@ -56,9 +48,7 @@ The number of nearest neighbors to consider
 The dimensionality of the dataset
 
 Question 4 (1 point)
- Saved
 
-Listen
 What type of algorithm is K-Means clustering?
 
 Question 4 options:
@@ -75,9 +65,7 @@ Supervised learning
 Semi-supervised learning
 
 Question 5 (1 point)
- Saved
 
-Listen
 How does the K-Means algorithm initialize cluster centroids?
 
 Question 5 options:
@@ -94,9 +82,7 @@ Manually specifying initial centroid positions
 Using a predefined set of points as centroids
 
 Question 6 (1 point)
- Saved
 
-Listen
 What is the objective function optimized by the K-Means algorithm?
 
 Question 6 options:
@@ -113,9 +99,7 @@ Davies–Bouldin index
 Entropy
 
 Question 7 (1 point)
- Saved
 
-Listen
 What does a decision tree node represent?
 
 Question 7 options:
@@ -132,18 +116,14 @@ A cluster of similar data points
 Decision points where the tree splits into branches
 
 Question 8 (1 point)
- Saved
 
-Listen
 Entropy is commonly used as a metric for decision tree training.
 
 Question 8 options:
 	True
 	False
 Question 9 (1 point)
- Saved
 
-Listen
 Which of the following metrics did we use for distance measuring in our KNN example?
 
 Question 9 options:
@@ -160,18 +140,14 @@ The Minkowski metric
 Cosine Similarity
 
 Question 10 (1 point)
- Saved
 
-Listen
 The k in KNN and k-Means Clustering represent the same thing
 
 Question 10 options:
 	True
 	False
 Question 11 (1 point)
- Saved
 
-Listen
 What are the centers of the clusters in K-Means called?
 
 Question 11 options:
@@ -188,18 +164,14 @@ locus points
 center of mass points
 
 Question 12 (1 point)
- Saved
 
-Listen
 KNN can only be used for categorization problems.
 
 Question 12 options:
 	True
 	False
 Question 13 (1 point)
- Saved
 
-Listen
 What machine learning Python library did we use to implement K-Means Clustering?
 
 Question 13 options:
@@ -216,9 +188,7 @@ Scikit-learn
 Tensorflow
 
 Question 14 (1 point)
- Saved
 
-Listen
 Which of the following is not a primary topic you need to study to understand transformers?
 
 Question 14 options:
@@ -235,9 +205,7 @@ Gates
 Encoder / Decoders
 
 Question 15 (1 point)
- Saved
 
-Listen
 Which of the following is not a matrix used in calculating attention in transformers?
 
 Question 15 options:
@@ -254,27 +222,21 @@ Convolution
 Value
 
 Question 16 (1 point)
- Saved
 
-Listen
 Transformers make use of the SoftMax function.
 
 Question 16 options:
 	True
 	False
 Question 17 (1 point)
- Saved
 
-Listen
 Transformers rely on a single hidden state to encompass all the information about a word sequence.
 
 Question 17 options:
 	True
 	False
 Question 18 (1 point)
- Saved
 
-Listen
 What is the particular type of attention used in transformers?
 
 Question 18 options:
@@ -291,9 +253,7 @@ external attention
 cosine attention
 
 Question 19 (1 point)
- Saved
 
-Listen
 What type of encoding is done to capture word order?
 
 Question 19 options:
@@ -310,9 +270,7 @@ Positional
 Ordinal
 
 Question 20 (1 point)
- Saved
 
-Listen
 What was the first backend for Keras?
 
 Question 20 options:
@@ -329,18 +287,14 @@ Theano
 TensorFlow
 
 Question 21 (1 point)
- Saved
 
-Listen
 TensorFlow is older than Torch/PyTorch.
 
 Question 21 options:
 	True
 	False
 Question 22 (1 point)
- Saved
 
-Listen
 JAX is best described as
 
 Question 22 options:
@@ -357,18 +311,14 @@ a foundational framework layer for numerical computation
 the next version of TensorFlow
 
 Question 23 (1 point)
- Saved
 
-Listen
 TensorFlow is still more used/popular than PyTorch.
 
 Question 23 options:
 	True
 	False
 Question 24 (1 point)
- Saved
 
-Listen
 Which company ported Torch from Lua to Python, creating PyTorch?
 
 Question 24 options:
@@ -385,9 +335,7 @@ Facebook/Meta
 Netflix
 
 Question 25 (1 point)
- Saved
 
-Listen
 In one-hot encoding, you translate symbols into vectors. What is the numeric value of most of the components/elements in those vectors?
 
 Question 25 options:
@@ -404,18 +352,14 @@ Question 25 options:
 the values are not numeric
 
 Question 26 (1 point)
- Saved
 
-Listen
 When using one-hot encoding, two different symbols could potentially have the same representation/encoding.
 
 Question 26 options:
 	True
 	False
 Question 27 (1 point)
- Saved
 
-Listen
 What is the maximum value of the dot product of any 2 (not necessarily distinct) one-hot vectors?
 
 Question 27 options:
@@ -432,9 +376,7 @@ the length of the vectors
 there is no maximum value
 
 Question 28 (1 point)
- Saved
 
-Listen
 Taking the dot product is an integral part of what other mathematical operation on matrices?
 
 Question 28 options:
@@ -451,9 +393,7 @@ matrix trace
 matrix addition
 
 Question 29 (1 point)
- Saved
 
-Listen
 What property is satisfied if the next word you will encounter in a sentence is only dependent upon the word preceding it.
 
 Question 29 options:
@@ -470,18 +410,14 @@ The Markov Property
 The Langlands Property
 
 Question 30 (1 point)
- Saved
 
-Listen
 Markov chains cannot be expressed in matrix form.
 
 Question 30 options:
 	True
 	False
 Question 31 (1 point)
- Saved
 
-Listen
 Like in any other Neural Network, transformer parameters need to be learned. This is done using backpropagation and relies upon the functional relationship between parameters and model error (or loss) being smooth: each computation step must be _____________________.
 
 Question 31 options:
@@ -498,18 +434,14 @@ differentiable
 atomic
 
 Question 32 (1 point)
- Saved
 
-Listen
 Embeddings typically take up more space than one-hot encoding.
 
 Question 32 options:
 	True
 	False
 Question 33 (1 point)
- Saved
 
-Listen
 What happens right after Input Embedding in a transformer?
 
 Question 33 options:
@@ -526,9 +458,7 @@ Add & Norm
 Positional Encoding
 
 Question 34 (1 point)
- Saved
 
-Listen
 Which of the following is not a property of the Softmax function?
 
 Question 34 options:
@@ -545,9 +475,7 @@ can not be differentiated
 de-emphasizes lowest values
 
 Question 35 (1 point)
- Saved
 
-Listen
 Which architectural component of a transformer ensures that it cannot look into the future when doing sequence generation?
 
 Question 35 options:
@@ -564,9 +492,7 @@ concat
 mask
 
 Question 36 (1 point)
- Saved
 
-Listen
 The softmax function tends to focus on one element - and this can be a bit of a problem when applied to the Attention mechanism. We get around this by using:
 
 Question 36 options:
@@ -583,18 +509,14 @@ self-attention
 argmax
 
 Question 37 (1 point)
- Saved
 
-Listen
 Attention acts like a filter, blocking most of what tries to pass through it.
 
 Question 37 options:
 	True
 	False
 Question 38 (1 point)
- Saved
 
-Listen
 Which of the following is a technique that maintains a consistent distribution of signal values each step of the way throughout many-layered neural networks.
 
 Question 38 options:
@@ -611,9 +533,7 @@ concatenation
 skip connections
 
 Question 39 (1 point)
- Saved
 
-Listen
 What is the mechanism that provides the connection between the encoder and decoder stacks of a transformer?
 
 Question 39 options:
@@ -630,9 +550,7 @@ byte pair encoding
 skip connections
 
 Question 40 (1 point)
- Saved
 
-Listen
 What property of matrices shows up in the name LoRA?
 
 Question 40 options:
@@ -649,18 +567,14 @@ rank
 associativity
 
 Question 41 (1 point)
- Saved
 
-Listen
 LLM fine tuning updates the weights of a base LLM, whereas RAG'ing provides additional information that can be queried and prompt-injected.
 
 Question 41 options:
 	True
 	False
 Question 42 (1 point)
- Saved
 
-Listen
 What does the Q in QLoRA stand for?
 
 Question 42 options:
@@ -677,9 +591,7 @@ Quantized
 Quiet
 
 Question 43 (1 point)
- Saved
 
-Listen
 What is FAISS primarily used for?
 
 Question 43 options:
@@ -696,9 +608,7 @@ Speech recognition
 Similarity search in high-dimensional vector spaces
 
 Question 44 (1 point)
- Saved
 
-Listen
 What is the primary purpose of random feature selection in Random Forests?
 
 Question 44 options:
@@ -715,18 +625,14 @@ To introduce diversity among the trees
 To improve the accuracy of individual trees
 
 Question 45 (1 point)
- Saved
 
-Listen
 Bagging (Bootstrap Aggregating) helps to reduce variance and improve the stability of a tree-based model. It also contributes to the decorrelation of the trees by exposing each tree to slightly different subsets of the data.
 
 Question 45 options:
 	True
 	False
 Question 46 (1 point)
- Saved
 
-Listen
 A client asks you which of the following ML libraries is likely to provide the best performance. Which would you choose?
 
 Question 46 options:
@@ -743,9 +649,7 @@ ML.net
 JAX
 
 Question 47 (1 point)
- Saved
 
-Listen
 When you here about Llama2B or Falcon180B what are those billions referring to? Billions of what?
 
 Question 47 options:
@@ -762,9 +666,7 @@ inputs
 weights
 
 Question 48 (1 point)
- Saved
 
-Listen
 What is Q-learning primarily used for?
 
 Question 48 options:
@@ -781,18 +683,14 @@ regression
 classification
 
 Question 49 (1 point)
- Saved
 
-Listen
 In Q learning the 'Q' stands for quality.
 
 Question 49 options:
 	True
 	False
 Question 50 (1 point)
- Saved
 
-Listen
 Which algorithm is Q-learning based on?
 
 Question 50 options:
