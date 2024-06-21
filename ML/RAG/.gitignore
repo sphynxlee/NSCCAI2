@@ -9,6 +9,7 @@ package-lock.json
 **/*.pyo
 **/*.pyd
 .DS_Store
+myenv/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
