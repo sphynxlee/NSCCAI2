@@ -16,10 +16,12 @@ class LinkedList:
         self.head: Optional[Node] = None
 
     def add_node(self, data):
+        new_node = Node(data)
         if self.head is None:
-            self.head = Node(data)
+            # If the list is empty, set the new node as the head
+            self.head = new_node
         else:
-            new_node = Node(data)
+            # Otherwise, traverse to the end of the list and add the new node there
             current_node = self.head
             while current_node.next is not None:
                 current_node = current_node.next
