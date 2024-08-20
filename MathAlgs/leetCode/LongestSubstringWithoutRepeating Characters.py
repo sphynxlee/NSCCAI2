@@ -9,6 +9,7 @@ def lengthOfLongestSubstring(str):
             l += 1
         charSet.add(str[r])
         res = max(res, r - l + 1)
+        # print('charSet:', len(charSet))
     return res
 
 print(lengthOfLongestSubstring("abcabcbb"))
