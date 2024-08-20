@@ -1,6 +1,8 @@
 def merge_two_sorted_lists(list1, list2):
     min_list = list1 if len(list1) < len(list2) else list2
     max_list = list1 if len(list1) > len(list2) else list2
+    print('min_list length:', len(min_list))
+    print('max_list length:', len(max_list))
 
     merge_list = []
     for i in range(len(min_list)):
@@ -10,9 +12,9 @@ def merge_two_sorted_lists(list1, list2):
         else:
             merge_list.append(list2[i])
             merge_list.append(list1[i])
-
-    for i in range(len(min_list), len(max_list)):
-        merge_list.append(max_list[i])
+    print('i+1:', i+1)
+    for j in range((i+1), len(max_list)):
+        merge_list.append(max_list[j])
 
     return merge_list
 
